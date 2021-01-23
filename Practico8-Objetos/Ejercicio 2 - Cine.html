@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Cine</title>
+    <link rel="stylesheet" href="css/E1.css">
+</head>
+
+<body>
+    <h1>Cine - Guardar pelicula</h1>
+    <form action="">
+    <label for="txtNombre">Nombre: </label>
+    <input type="text" id="txtNombre">
+
+    <label for="txtAnio">Año: </label>
+    <input type="text" id="txtAnio">
+
+    <!-- fasdfadsfasdf -->
+        <label for="filePoster">Poster: </label>
+        <input type="file" id="filePoster">
+    <label for="slcGenero">Genero: </label>
+    <select id="slcGenero">
+        <option value="Comedia">Comedia</option>
+        <option value="Drama">Drama</option>
+        <option value="Ciencia Ficcion">Ciencia Ficcion</option>
+    </select>
+    
+
+    <label for="txtVotantes">Votantes: </label>
+    <input type="text" id="txtVotantes">
+
+    <label for="txtPuntos">Puntos: </label>
+    <input type="text" id="txtPuntos">
+
+    <input type="button" id="btnAgregarPelicula" value="Agregar">
+</form>
+    
+
+    <h2>Listado de peliculas</h2>
+
+    
+    <!-- TODAS LAS PELICULAS -->
+    <table border=1px>
+        <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Año</td>
+                <td>Genero</td>
+                <td>Votantes</td>
+                <td>Votos Totales</td>
+            </tr>
+        </thead>
+        <tbody id="tblPeliculas">
+
+        </tbody>
+    </table>
+
+    <h1>Peliculas con promedio mayor a 4 puntos</h1>
+     <!-- PELICULAS promedio mayor a 4 -->
+     <input type="button" id="btnListarPromedioMayor" value="Listar peliculas con promedio  > 4 putnos"><br><br>
+
+     <table border=1px>
+        <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Año</td>
+                <td>Genero</td>
+                <td>Votantes</td>
+                <td>Votos Totales</td>
+            </tr>
+        </thead>
+        <tbody id="tblPeliculasPromedio">
+
+        </tbody>
+    </table>
+
+    <h1>Buscar Peliculas</h1>
+    <label for="txtNombreBuscado">Buscar: </label>
+    <input type="text" id="txtNombreBuscado">
+
+    <input type="button" value="buscar" id="btnBuscarPelicula">
+    <p id="pResultado"></p>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/FuncionesAuxiliares.js"></script>
+    <script src="js/E2.js"></script>
+
+</body>
+
+</html>

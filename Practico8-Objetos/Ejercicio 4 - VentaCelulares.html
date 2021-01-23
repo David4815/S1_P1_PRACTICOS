@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta celulares</title>
+    <link rel="stylesheet" href="css/E1.css">
+</head>
+
+<body>
+    <h1>Venta de celulares</h1>
+
+    <form action="">
+        <label for="slcMarca">Marca: </label>
+        <select id="slcMarca">
+            <option value="1">Samsung</option>
+            <option value="2">Sony</option>
+            <option value="3">LG</option>
+        </select>
+
+        <label for="txtModelo">Modelo: </label>
+        <input type="text" id="txtModelo">
+        
+        <label for="txtPrecio">Precio: </label>
+        <input type="text" id="txtPrecio">
+        
+        <label for="txtCantUnidades">Cantidad de unidades: </label>
+        <input type="text" id="txtCantUnidades">
+        
+        <input type="button" value="Comprar" id="btnComprar">
+
+    </form>
+
+
+    <h1>Total de ventas que superan los 2000</h1>
+
+    
+    
+        
+        <input type="button" value="Ventas > a 2000" id="btnVerVentas">
+        
+
+        <table border=1px>
+            <thead>
+                <tr>
+                    <td>Marca</td>
+                    <td>Modelo</td>
+                    <td>Precio</td>
+                    <td>Cantidad de unidades</td>
+                    <td>Total Ventas<td>
+                </tr>
+            </thead>
+
+            <tbody id="tblVentas">
+
+            </tbody>
+
+        </table>
+   
+        <h1>Unidades vendidas para modelo buscado</h1>
+
+        <label for="txtModeloBuscado"></label>
+        <input type="text" id="txtModeloBuscado">
+
+        <input type="button" value="Ventas de modelo buscado" id="btnVerVentasModelo">
+
+        <p id="pResultado"></p>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/FuncionesAuxiliares.js"></script>
+    <script src="js/E4.js"></script>
+</body>
+
+</html>
+

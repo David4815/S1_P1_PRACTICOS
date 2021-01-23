@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas Tv</title>
+    <link rel="stylesheet" href="css/E1.css">
+</head>
+<body>
+    <section>
+    <h1>Registro de programas</h1>
+
+    <label for="txtNombre">Nombre programa: </label>
+    <input type="text" id="txtNombre">
+    <br><br>
+
+    <label for="txtCanal">Canal: </label>
+    <input type="text" id="txtCanal">
+    <br><br>
+
+    <label for="slcGenero">Genero: </label>
+    <select  id="slcGenero">
+        <option value="1">Pelicula</option>
+        <option value="2">Informativo</option>
+        <option value="3">Comedia</option>
+        <option value="4">Otros</option>
+    </select>
+    <br><br>
+    
+    <label for="txtHoraInicio">Hora inicio: </label>
+    <input type="text" id="txtHoraInicio">
+    <br><br>
+
+    <label for="txtDuracion">Duracion: </label>
+    <input type="text" id="txtDuracion">
+    <br><br>
+
+    <label for="fileFoto">Selecione una Foto:</label>
+    <input type="file" value="Examinar" id="fileFoto">
+    <br>
+
+    <input type="button" id="btnGuardar" value="Guardar">
+</section>
+
+<section>
+    <h1>Contar programas por canal</h1>
+    <label for="txtCanalBuscado">Canal: </label>
+    <input type="text" id="txtCanalBuscado">
+    <br><br>
+    <input type="button" id="btnContar" value="Contar">
+    <p id="pResultado"></p>
+</section>
+
+<section>
+    <h1>Mostrar Peliculas de genero comedia</h1>
+    <input type="button" id="btnMostrar" value="Mostrar">
+    <div id="mostrarPeliculas">
+        
+    </div>
+</section>
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/E1.js"></script>
+
+</body>
+</html>

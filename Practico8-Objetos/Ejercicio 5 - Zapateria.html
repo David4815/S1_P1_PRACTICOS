@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapateria</title>
+    <link rel="stylesheet" href="css/E1.css">
+</head>
+
+<body>
+    <h1>Datos de Zapatos</h1>
+
+    <form action="">
+        
+        <label for="txtMarca">Marca: </label>
+        <input type="text" id="txtMarca">
+        
+        <label for="txtTalle">Talle: </label>
+        <input type="text" id="txtTalle">
+        
+        <label for="txtColor">Color: </label>
+        <input type="text" id="txtColor">
+
+        <label for="slcOrigen">Origen: </label>
+        <select id="slcOrigen">
+            <option value="Nacional">Nacional</option>
+            <option value="Importado">Importado</option>
+        </select>
+        
+        <input type="button" value="Guardar datos" id="btnGuardar">
+
+    </form>
+
+    <h1>Cantidad zapatos talla 38 <br> Importados vs Nacionales</h1>
+    <input type="button" value="Contar" id="btnContar">
+    <br>
+    <p id="pResultado"></p>
+    
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/FuncionesAuxiliares.js"></script>
+    <script src="js/E5.js"></script>
+</body>
+
+</html>

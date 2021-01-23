@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitarras</title>
+    <link rel="stylesheet" href="css/E1.css">
+</head>
+
+<body>
+    <h1>Venta de Guitarras</h1>
+
+    <form action="">
+        <label for="slcTipo">Tipo de guitarra: </label>
+        <select id="slcTipo">
+            <option value="1">clasica</option>
+            <option value="2">electrica</option>
+            <option value="3">electroacustica</option>
+        </select>
+
+        <label for="txtcantidad">Cantidad: </label>
+        <input type="text" id="txtCantidad">
+        <input type="button" value="Registrar" id="btnRegistrar">
+    </form>
+
+
+    <h1>Ganancia segun tipo de guitarra</h1>
+
+    <form action="">
+       
+        <input type="button" value="Ver ventas" id="btnVentas">
+
+        <table border=1px>
+            <thead>
+                <tr>
+                    <td>Clasica</td>
+                    <td>Electrica</td>
+                    <td>Electoracustica</td>
+                </tr>
+            </thead>
+
+            <tbody id="tblVentas">
+
+            </tbody>
+
+        </table>
+    </form>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/FuncionesAuxiliares.js"></script>
+    <script src="js/E3.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <label for="slcTipoV">Tipo de guitarra: </label>
+<select id="slcTipoV">
+    <option value="1">clasica</option>
+    <option value="2">electrica</option>
+    <option value="3">electroacustica</option>
+</select> -->

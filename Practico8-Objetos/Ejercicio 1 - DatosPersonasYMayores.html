@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+</head>
+<body>
+<h1>Lista de personas</h1>
+
+<label for="txtNombre">Nombre:</label>
+<input type="text" id="txtNombre"><br>
+<label for="txtEdad">Edad:</label>
+<input type="text" id="txtEdad"><br>
+<label for="txtNacionalidad">Nacionalidad:</label>
+<input type="text" id="txtNacionalidad"><br>
+
+<input type="button" id="btnAgregar" value="Agregar">
+<input type="button" id="btnAgregarMayores" value="AgregarMayores">
+<!-- TABLA CON TODAS LAS PERSONAS -->
+<h2>Todas las personas</h2>
+<table border=1px>
+    <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Edad</td>
+            <td>Nacionalidad</td>
+        </tr>
+    </thead>
+    <tbody id="tblDatos">
+
+    </tbody>
+    
+</table>
+
+<!-- TABLA CON LAS PERSONAS MAYORES DE EDAD -->
+<h2>Mayores de edad</h2>
+<table border=1px>
+    <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Edad</td>
+            <td>Nacionalidad</td>
+        </tr>
+    </thead>
+    <tbody id="tblDatosM">
+
+    </tbody>
+    
+</table>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/E1.js"></script>
+</body>
+</html>

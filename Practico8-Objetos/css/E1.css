@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    border-radius:3px;
+}
+body{
+    background-color: teal;
+    text-align: center;
+}
+h1{
+    background-color: rgb(161, 31, 31);
+    margin: 15px 0;
+}
+h1,h2{
+    margin:15px auto;
+    width: 50%;
+}
+form{
+    overflow: hidden;
+    width:20%;
+    margin: 0 auto;
+}
+form label{
+    width:100%;
+    float:left;
+    background-color: rgb(59, 59, 59);
+}
+form input{
+    float:left;
+    background-color: rgb(158, 157, 157);
+    overflow: hidden;
+    width:100%;
+}
+form select{
+    float:left;
+    background-color: rgb(158, 157, 157);
+    width:100%;
+}
+
+form input[type="button"]{
+    margin: 20px 0;
+    padding: 5px 0;
+    background-color: rgb(44, 44, 44);
+    color:white;
+}
+table{
+    margin:15px auto;
+    background-color: grey;
+    
+}
+
+h1 + input[type="button"]{
+    margin-top:10px;
+    padding: 10px 10px;
+    background-color: rgb(44, 44, 44);
+    color:white;
+}
